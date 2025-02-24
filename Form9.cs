@@ -10,33 +10,31 @@ using System.Windows.Forms;
 
 namespace Interfaz_Controller
 {
-    public partial class Form6 : Form
+    public partial class Form9: Form
     {
-        public Form6()
+        public Form9()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            int x1 = int.Parse(textBox1.Text);
-            int y1 = int.Parse(textBox2.Text);
-            int x2 = int.Parse(textBox3.Text);
-            int y2 = int.Parse(textBox4.Text);
+            double N1 = double.Parse(textBox1.Text);
+            double N2 = double.Parse(textBox2.Text);
+            double N3 = double.Parse(textBox3.Text);
+            double N4 = double.Parse(textBox4.Text);
+            double N5 = double.Parse(textBox5.Text);
 
-            double Distancia = Math.Sqrt((Math.Pow((x2 - x1), 2)) + (Math.Pow((y2 - y1), 2)));
+            double Promedio = (N1 + N2 + N3 + N4 + N5) / 5;
 
-            textBox5.Text = Distancia.ToString();
+            if (Promedio >= 6)
+            {
+                textBox6.Text = "Aprobado".ToString();
+            }
+            else
+            {
+                textBox6.Text = "Reprobado".ToString();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,6 +44,7 @@ namespace Interfaz_Controller
             textBox3.ResetText();
             textBox4.ResetText();
             textBox5.ResetText();
+            textBox6.ResetText();
         }
 
         private void button3_Click(object sender, EventArgs e)

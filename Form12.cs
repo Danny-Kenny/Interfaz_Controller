@@ -10,33 +10,41 @@ using System.Windows.Forms;
 
 namespace Interfaz_Controller
 {
-    public partial class Form6 : Form
+    public partial class Form12: Form
     {
-        public Form6()
+        public Form12()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int x1 = int.Parse(textBox1.Text);
-            int y1 = int.Parse(textBox2.Text);
-            int x2 = int.Parse(textBox3.Text);
-            int y2 = int.Parse(textBox4.Text);
+            double Ahorros = double.Parse(textBox1.Text);
+            double Gastos = double.Parse(textBox2.Text);
 
-            double Distancia = Math.Sqrt((Math.Pow((x2 - x1), 2)) + (Math.Pow((y2 - y1), 2)));
+            if (Ahorros > Gastos)
+            {
+                Ahorros -= Gastos;
+                Gastos = 0;
 
-            textBox5.Text = Distancia.ToString();
+                textBox3.Text = Ahorros.ToString();
+                textBox4.Text = Gastos.ToString();
+                textBox5.Text = "Solvente".ToString();
+            }
+            else
+            {
+                Gastos -= Ahorros;
+                Ahorros = 0;
+
+                textBox3.Text = Ahorros.ToString();
+                textBox4.Text = Gastos.ToString();
+                textBox5.Text = "Quiebra".ToString();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

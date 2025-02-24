@@ -10,33 +10,26 @@ using System.Windows.Forms;
 
 namespace Interfaz_Controller
 {
-    public partial class Form6 : Form
+    public partial class Form13: Form
     {
-        public Form6()
+        public Form13()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            int x1 = int.Parse(textBox1.Text);
-            int y1 = int.Parse(textBox2.Text);
-            int x2 = int.Parse(textBox3.Text);
-            int y2 = int.Parse(textBox4.Text);
+            double Temperatura = double.Parse(textBox1.Text);
+            double Presion = double.Parse(textBox2.Text);
 
-            double Distancia = Math.Sqrt((Math.Pow((x2 - x1), 2)) + (Math.Pow((y2 - y1), 2)));
-
-            textBox5.Text = Distancia.ToString();
+            if (Presion > 200 || Temperatura > 100)
+            {
+                textBox3.Text = "Alarma".ToString();
+            }
+            else
+            {
+                textBox3.Text = "Normal".ToString();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -44,8 +37,6 @@ namespace Interfaz_Controller
             textBox1.ResetText();
             textBox2.ResetText();
             textBox3.ResetText();
-            textBox4.ResetText();
-            textBox5.ResetText();
         }
 
         private void button3_Click(object sender, EventArgs e)
