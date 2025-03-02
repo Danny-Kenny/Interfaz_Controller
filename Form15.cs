@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -49,6 +50,13 @@ namespace Interfaz_Controller
                 int S = Multiplicador * i;
                 listBox2.Items.Add(Multiplicador + " X " + i + " = " + S);
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form18 From_Menu = new Form18();
+            From_Menu.Show();
+            this.Hide();
         }
     }
 }

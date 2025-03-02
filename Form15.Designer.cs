@@ -40,6 +40,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -69,7 +70,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PowderBlue;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(209, 284);
+            this.button2.Location = new System.Drawing.Point(167, 284);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(83, 37);
             this.button2.TabIndex = 2;
@@ -81,7 +82,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.PowderBlue;
             this.button3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(364, 284);
+            this.button3.Location = new System.Drawing.Point(413, 284);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(83, 37);
             this.button3.TabIndex = 3;
@@ -170,12 +171,25 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "A continuacion ingresa los valores para hacer la multiplicacion.";
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.PowderBlue;
+            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(289, 284);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(83, 37);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "Menu";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form15
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(533, 335);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
@@ -209,5 +223,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button5;
     }
 }

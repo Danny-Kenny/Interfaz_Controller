@@ -48,5 +48,17 @@ namespace Interfaz_Controller
         {
             this.Close();
         }
+
+        private void Form11_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form18 From_Menu = new Form18();
+            From_Menu.Show();
+            this.Hide();
+        }
     }
 }

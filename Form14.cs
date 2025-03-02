@@ -33,7 +33,7 @@ namespace Interfaz_Controller
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -47,6 +47,13 @@ namespace Interfaz_Controller
         private void button5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Form18 From_Menu = new Form18();
+            From_Menu.Show();
+            this.Hide();
         }
     }
 }

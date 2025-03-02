@@ -43,7 +43,14 @@ namespace Interfaz_Controller
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form18 Form_Menu = new Form18();
+            Form_Menu.Show();
+            this.Hide();
         }
     }
 }

@@ -35,15 +35,16 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Azure;
             this.button1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(17, 187);
+            this.button1.Location = new System.Drawing.Point(17, 190);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 37);
+            this.button1.Size = new System.Drawing.Size(89, 34);
             this.button1.TabIndex = 0;
             this.button1.Text = "Realizar";
             this.button1.UseVisualStyleBackColor = false;
@@ -73,9 +74,9 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Azure;
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(112, 187);
+            this.button2.Location = new System.Drawing.Point(112, 190);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 37);
+            this.button2.Size = new System.Drawing.Size(94, 34);
             this.button2.TabIndex = 3;
             this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = false;
@@ -85,9 +86,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Azure;
             this.button3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(212, 187);
+            this.button3.Location = new System.Drawing.Point(312, 190);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 37);
+            this.button3.Size = new System.Drawing.Size(94, 35);
             this.button3.TabIndex = 4;
             this.button3.Text = "Salir";
             this.button3.UseVisualStyleBackColor = false;
@@ -115,12 +116,26 @@
             this.listBox2.Size = new System.Drawing.Size(392, 100);
             this.listBox2.TabIndex = 6;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Azure;
+            this.button5.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(212, 190);
+            this.button5.Name = "button5";
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button5.Size = new System.Drawing.Size(94, 34);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Menu";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
             // Form14
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(760, 234);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -129,7 +144,7 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form14";
-            this.Text = "Form14";
+            this.Text = "Lista de numeros Aleatorios";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,5 +159,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button button5;
     }
 }
