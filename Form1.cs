@@ -35,7 +35,7 @@ namespace Interfaz_Controller
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -47,6 +47,13 @@ namespace Interfaz_Controller
             textBox3.ResetText();
             //textBox1.Clear();   Funcion predeterminada que es limpiar por C#
             //textBox2.Clear();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form18 fr2 = new Form18();
+            fr2.Show();
+            this.Hide();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Interfaz_Controller
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form13()); //Indica que formulario se debe ejecutar
+            Application.Run(new Form18()); //Indica que formulario se debe ejecutar
         }
     }
 }
