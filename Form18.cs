@@ -140,5 +140,45 @@ namespace Interfaz_Controller
         {
             Application.Exit();
         }
+
+        private void ejercicio1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form19 Envio = new Form19();
+            Envio.Show();
+            this.Hide();
+        }
+
+        private void ejercicio2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form20 Envio = new Form20();
+            Envio.Show();
+            this.Hide();
+        }
+
+        private void ejercicio3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form21 Guia = new Form21();
+            Guia.Show();
+            this.Hide();
+        }
+
+        private void ejercicio4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form22 Guia = new Form22();
+            Guia.Show();
+            this.Hide();
+        }
+
+        private void ejercicio5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form23 Nuevo = new Form23();
+            Nuevo.Show();
+            this.Hide();
+        }
+
+        private void salirToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
